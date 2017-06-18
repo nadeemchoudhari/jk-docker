@@ -1,0 +1,5 @@
+
+cp etalon_config.properties config.properties
+cp etalon_config_proxyqueue.properties config_proxyqueue.properties
+cp etalon_config_MDP.properties config_MDP.properties
+cp etalon_config_monitoring.properties config_monitoring.properties

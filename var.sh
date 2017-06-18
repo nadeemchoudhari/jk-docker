@@ -1,0 +1,15 @@
+JB_HTTP_PORT=5551
+JBOSS_HOME=/u01/app/wildfly-8.2.0.Final
+JAVA_HOME=/u01/app/java/jdk1.8.0_60
+JB_HOST=node-1.example.com
+JB_HOST_SHORT_NAME=
+configure_MN_PN=
+SERVER_HOME=/u02/netcracker/mano/u32_q477_5551
+SERVER_NAME=u32_q477_5551
+DB_HOST=node-1.example.com
+DB_PORT=5432
+WFLY_TMPLT=wf82-template-nc_build005.zip
+BUILD1=0_MANO_EvCPE_Showroom_build021.zip
+BUILD2=
+BUILD3=
+BUILD4=
