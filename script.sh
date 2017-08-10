@@ -36,10 +36,10 @@ echo BUILD1: $BUILD1 >> $varfile
 echo BUILD2: $BUILD2 >> $varfile
 echo BUILD3: $BUILD3 >> $varfile
 echo BUILD4: $BUILD4 >> $varfile
+ansible-playbook -vvv /etc/ansible/deploy.yml --extra-vars "JB_HOST=$JB_HOST SERVER_NAME=$SERVER_NAME"
+#ansible-playbook -vvv /etc/ansible/deploy.yml 
 
-ansible-playbook -vvv /etc/ansible/deploy.yml --extra-vars "host=$JB_HOST"
-
-echo " This is executed by Jenis [ SUCCESS " > out.txt
+echo " This is executed by Jenkins [ SUCCESS " > out.txt
 
 echo " BUILD SUCCESSFUL "
 
