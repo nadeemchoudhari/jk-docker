@@ -3,7 +3,11 @@
 source ./git-repo/var.sh
 
 varfile=/etc/ansible/host_vars/$JB_HOST/var.yml
+varfile2=/etc/ansible/host_vars/$SERVER_NAME/var.yml
+mkdir -p /etc/ansible/host_vars/$SERVER_NAME/
+mkdir -p /etc/ansible/host_vars/$JB_HOST/
 echo --- > $varfile
+echo --- > $varfile2
 echo configure_MN_PN : $configure_MN_PN >> $varfile
 echo JB_HTTP_PORT: $JB_HTTP_PORT >>  $varfile
 JB_HTTPS_PORT=`expr $JB_HTTP_PORT + 1`
@@ -22,7 +26,7 @@ echo JAVA_HOME: $JAVA_HOME >> $varfile
 echo JB_HOST: $JB_HOST >> $varfile
 echo JB_HOST_SHORT_NAME: $JB_HOST_SHORT_NAME >> $varfile
 echo SERVER_HOME: $SERVER_HOME >> $varfile
-echo SERVER_NAME: $SERVER_NAME >> $varfile
+echo SERVER_NAME: $SERVER_NAME >> $varfile2
 echo DB_HOST: $DB_HOST >> $varfile
 echo DB_NAME: $DB_NAME >> $varfile
 echo DB_PORT: $DB_PORT >> $varfile
