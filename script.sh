@@ -27,6 +27,7 @@ echo JB_HOST: $JB_HOST >> $varfile
 echo JB_HOST_SHORT_NAME: $JB_HOST_SHORT_NAME >> $varfile
 echo SERVER_HOME: $SERVER_HOME >> $varfile
 echo SERVER_NAME: $SERVER_NAME >> $varfile2
+echo SERVER_NAME: $SERVER_NAME >> $varfile
 echo DB_HOST: $DB_HOST >> $varfile
 echo DB_NAME: $DB_NAME >> $varfile
 echo DB_PORT: $DB_PORT >> $varfile
