@@ -1,4 +1,7 @@
+
+
 echo "HELLO WORLD "
+mkdir  ./git-repo
 echo JB_HTTP_PORT=$JB_HTTP_PORT > ./git-repo/var.sh
 echo JBOSS_HOME=$JBOSS_HOME >> ./git-repo/var.sh
 echo JAVA_HOME=$JAVA_HOME >> ./git-repo/var.sh
