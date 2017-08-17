@@ -49,7 +49,7 @@ echo BUILD1: $BUILD1 >> $varfile2
 echo BUILD2: $BUILD2 >> $varfile
 echo BUILD3: $BUILD3 >> $varfile
 echo BUILD4: $BUILD4 >> $varfile
-sudo ansible-playbook -vv /etc/ansible/deploy.yml --extra-vars "JB_HOST=$JB_HOST SERVER_NAME=$SERVER_NAME JB_HTTP_PORT=$JB_HTTP_PORT"
+sudo ansible-playbook  /etc/ansible/deploy.yml --extra-vars "JB_HOST=$JB_HOST SERVER_NAME=$SERVER_NAME JB_HTTP_PORT=$JB_HTTP_PORT"
 #ansible-playbook -vvv /etc/ansible/deploy.yml 
 
 echo " This is executed by Jenkins [ SUCCESS " > out.txt
