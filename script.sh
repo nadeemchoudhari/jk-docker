@@ -54,7 +54,16 @@ sudo ansible-playbook  /etc/ansible/deploy.yml --extra-vars "JB_HOST=$JB_HOST SE
 
 echo " This is executed by Jenkins [ SUCCESS " > out.txt
 
+echo quit | telnet $JB_HOST $JB_HTTP_PORT " 2>/dev/null | grep Connected
+
+if [ $? -eq 0 ];then
+
 echo " BUILD SUCCESSFUL "
 
+else 
+
+echo " BUILD FAILED " 
+
+fi 
 
 
