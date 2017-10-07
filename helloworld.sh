@@ -1,4 +1,6 @@
 
 
 echo " Hello world "
-echo " This is my first build " 
+
+echo "NAME=$NAME"
+echo "EMP_ID=$EMP_ID"
