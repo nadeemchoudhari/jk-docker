@@ -1,6 +1,9 @@
 
 
-echo "HELLO WORLD "
+echo "BUILD IS RUNNING "
+
+
+
 mkdir  ./git-repo
 
 cat /etc/ansible/hosts | grep $SERVER_NAME 
