@@ -2,9 +2,13 @@
 
 echo "BUILD IS RUNNING "
 
+ls ./git-repo
 
+if [ $? -ne 0 ];then
 
-mkdir  ./git-repo
+	mkdir  ./git-repo
+
+fi
 
 cat /etc/ansible/hosts | grep $SERVER_NAME 
 
@@ -12,8 +16,8 @@ es=$?
 echo "es=$es"
 if [ $es -ne 0 ];then
  
-echo -e "[$SERVER_NAME]\n" >> /etc/ansible/hosts
-echo -e "\n $SERVER_NAME ansible_ssh_port=2$JB_HTTP_PORT ansible_ssh_host=$JB_HOST ansible_connection=ssh \n " >> /etc/ansible/hosts
+	echo -e "[$SERVER_NAME]\n" >> /etc/ansible/hosts
+	echo -e "\n $SERVER_NAME ansible_ssh_port=2$JB_HTTP_PORT ansible_ssh_host=$JB_HOST ansible_connection=ssh \n " >> /etc/ansible/hosts
 
 fi
 
